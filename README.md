@@ -8,6 +8,7 @@ Team Members: Dibyanshu Mohanty
 ### CODE LINKS:
 hEALTH-I-BOT Backend code link: https://github.com/dibyanshu-mohanty/Health-i-bot
 Deployed link: https://healthibot.herokuapp.com/
+Arduino Code link: https://github.com/himanshushah05/Healthibot
 
 ## Running the code:
 Due to glitches in the AWS server , our database Postgresql want configurd with the deployed link. However the real-time dashboard can be accessed by https://healthibot.herokuapp.com/accounts/dashboard .
