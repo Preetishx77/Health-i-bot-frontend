@@ -1,0 +1,140 @@
+#companyname{
+    font-style: italic;
+    font-weight: bold;
+    font-size: 6rem;
+    color: #ffa7a7;
+    text-shadow: 6px 6px #FF0000;
+    line-height: 110%;
+    letter-spacing: 10px;
+  }
+  #DocPhone{
+    position: absolute;
+    width: 250px;
+    margin-left: 83.5%;
+    margin-top: -1.5%;
+  }
+  #Bot{
+    margin-left: 80%;
+    margin-top: -10%;
+  }
+  #h21{
+      margin-top: 10%;
+    margin-bottom: 10% ;
+  }
+  #h22{
+      font-size: x-large;
+      font-style: italic;
+      color: #ff1616;
+    margin-top: 20%;}
+
+#blog{
+    margin-left: 47%;
+}
+#blogf{
+    font-size: larger;
+    margin-left: 35%;
+}
+#tagline{
+    font-size: 1.5rem;font-style: italic;margin-left: 30%;color: black;font-weight: bold;margin-top: 5%;
+}
+.contact-form{
+  background: #aee3f7;
+  margin-top: 0%;
+  margin-bottom: 5%;
+  width: 80%;
+}
+.contact-form .form-control{
+  border-radius:1rem;
+}
+
+.contact-form form{
+  padding: 10%;
+
+}
+.contact-form form .row{
+  margin-top: 5%;
+  margin-bottom: 0%;
+}
+
+.contact-form .btnContact {
+  margin-left: 5%;
+  width: 50%;
+  border: none;
+  border-radius: 1rem;
+  padding: 1.5%;
+  background: #dc3545;
+  font-weight: 600;
+  color: #fff;
+  cursor: pointer;
+}
+
+
+  @media screen and (max-width: 575px){
+    #companyname{
+      font-size: 3.5rem;
+      letter-spacing: 2px;
+      text-shadow: 3px 3px #FF0000;
+      line-height: 100%;
+    }
+    #docphone{
+      display: none;
+    }
+    #h21{
+        font-size: smaller;
+        margin-left: 5%;
+        margin-right: 5%;
+
+    }
+    #h22{
+
+        margin-left: 5%;
+
+
+    }
+    #Comp{
+      display: none;
+    }
+    #aunty{
+      width: 80%;
+      overflow: hidden;
+    }
+    #landing{
+      margin: 0;
+      padding: 0;
+    }
+    #blogf{
+        font-size: smaller;
+        margin-left: 5%;
+    }
+    #tagline{
+        margin-left: 10%;
+        margin-right: 5%;
+    }
+
+  }
+  @media screen and (max-width: 767px){
+    #DocPhone{
+      display: none;
+    }
+    #Comp{
+      display: none;
+    }
+    #blog{
+        margin-left: 27%;
+
+    }
+
+  }
+
+  @media screen and (max-width: 991px){
+    #DocPhone{
+      display: none;
+    }
+    #Comp{
+      display: none;
+    }
+
+  }
+  @media screen and (max-width: 1199px){
+
+  }

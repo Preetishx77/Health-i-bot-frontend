@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/chartist.js/latest/chartist.min.css">
+    <script src="https://kit.fontawesome.com/6de3383711.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@1,800&display=swap" rel="stylesheet">
+    <style>
+
+
+        @media (max-width: 767.98px) {
+
+        }
+
+        .navbar {
+            box-shadow: inset 0 -1px 0 rgba(0, 0, 0, .1);
+            background-color: #6a9dfd;
+        }
+
+        @media (min-width: 767.98px) {
+            .navbar {
+                top: 0;
+                position: sticky;
+                z-index: 999;
+            }
+        }
+
+
+    </style>
+</head>
+<body>
+      <nav class="navbar navbar-expand-lg navbar-dark" id="nav" style=" background-color: #6a9dfd;">
+        <a class="navbar-brand" href="#"></a>
+        <img src="" alt="">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active px-3">
+              <a class="nav-link" href="#" style="color: black;text-shadow: 1px 1px #FF0000;;margin-left: 0%;font-size: 1.2rem; font-weight: 700;">HOME<span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item px-3">
+              <a class="nav-link" href="#" style="color: black;text-shadow: 1px 1px #FF0000;font-size: 1.2rem;font-weight: 700;">ABOUT </a>
+            </li>
+            <li class="nav-item px-3">
+              <a class="nav-link" href="#" style="color: black;text-shadow: 1px 1px #FF0000;font-size: 1.2rem;font-weight: 700;">PROTOTYPE</a>
+            </li>
+            <li class="nav-item px-3">
+                <a class="nav-link" href="" style="color: black;text-shadow: 1px 1px #FF0000;margin-left: 0%;font-size: 1.2rem; font-weight: 700;" data-toggle="modal" data-target="#modal3">REQUEST DEMO</a>
+              </li>
+
+          </ul>
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item px-5">
+              <!-- <div class="modal-footer d-flex justify-content-center"> -->
+                <a href="" style="color: black;text-shadow: 1px 1px #FF0000;margin-left: 0%;font-size: 1.2rem; font-weight: 700;text-decoration: none;" data-toggle="modal" data-target="#modalRegisterForm1"><i class="fas fa-user-plus" style="padding: 4px; color: black;"></i> USER DASHBOARD</a>
+            </li>
+            <li class="nav-item px-5">
+              <!-- <div class="modal-footer d-flex justify-content-center"> -->
+                <a href="" style="color: black;text-shadow: 1px 1px #FF0000;margin-left: 0%;font-size: 1.2rem; font-weight: 700;text-decoration: none;" data-toggle="modal" data-target="#modalLoginForm2"><i class="fas fa-sign-in-alt" style="padding: 4px;color: black;"></i> LOGOUT</a>
+            </li>
+          </ul>
+
+        </div>
+      </nav>
+    <div class="container-fluid" >
+        <div class="row">
+            <main class="col-md-9 ml-sm-auto col-lg-12 px-md-5 py-4" style="background-color: #f1f0ef;">
+                <h1 class="h1 px-3">Dashboard</h1>
+
+                <div class="row my-4">
+                    <div class="col-12 col-md-6 col-lg-4 mb-4 mb-lg-0">
+                        <div class="card" >
+                            <h5 class="card-header" style=" background-color: #6a9dfd;color: black;">Pulse Rate</h5>
+                            <div class="card-body" style="background-color:#f2f5d8;">
+                              <h5 class="card-title">80</h5>
+                              <p class="card-text">Updated on 11:40 pm</p>
+                              <p class="card-text text-success">Stable condition</p>
+                            </div>
+                          </div>
+                    </div>
+                    <div class="col-12 col-md-6 mb-4 mb-lg-0 col-lg-4">
+                        <div class="card">
+                            <h5 class="card-header" style=" background-color: #6a9dfd;">Temperature</h5>
+                            <div class="card-body"  style="background-color:#f2f5d8;">
+                              <h5 class="card-title">99</h5>
+                              <p class="card-text">Updated on 11:40 pm</p>
+                              <p class="card-text text-success">Mild fever</p>
+                            </div>
+                          </div>
+                    </div>
+                    <div class="col-12 col-md-6 mb-4 mb-lg-0 col-lg-4">
+                        <div class="card">
+                            <h5 class="card-header" style=" background-color: #6a9dfd;">Oxygen Levels</h5>
+                            <div class="card-body"  style="background-color:#f2f5d8;">
+                              <h5 class="card-title">43</h5>
+                              <p class="card-text">Text</p>
+                              <p class="card-text text-danger">Danger levels Contact Doctor</p>
+                            </div>
+                          </div>
+                    </div>
+
+                </div>
+                <div class="row">
+                    <div class="col-12 col-xl-8 mb-4 mb-lg-0">
+                        <div class="card">
+                            <h5 class="card-header" style=" background-color: #6a9dfd;">Latest Updates</h5>
+                            <div class="card-body" style="background-color:#f2f5d8;">
+                                <div class="table-responsive">
+                                    <table class="table">
+                                        <thead>
+                                          <tr>
+                                            <th scope="col">Date</th>
+                                            <th scope="col">TIme</th>
+                                            <th scope="col">Pulse rate</th>
+                                            <th scope="col">Temperature</th>
+                                            <th scope="col">Condition update</th>
+                                          </tr>
+                                        </thead>
+                                        <tbody>
+                                          <tr>
+                                            <th scope="row">add text</th>
+                                            <td>add text </td>
+                                            <td>add text </td>
+                                            <td> add text </td>
+                                            <td>add text </td>
+                                          </tr>
+                                          <tr>
+                                            <th scope="row">add text</th>
+                                            <td>add text </td>
+                                            <td>add text </td>
+                                            <td> add text </td>
+                                            <td>add text </td>
+                                          </tr>
+                                          <tr>
+                                            <th scope="row">add text</th>
+                                            <td>add text </td>
+                                            <td>add text </td>
+                                            <td> add text </td>
+                                            <td>add text </td>
+                                          </tr>
+                                          <tr>
+                                            <th scope="row">add text</th>
+                                            <td>add text </td>
+                                            <td>add text </td>
+                                            <td> add text </td>
+                                            <td>add text </td>
+                                          </tr>
+                                          <tr>
+                                            <th scope="row">add text</th>
+                                            <td>add text </td>
+                                            <td>add text </td>
+                                            <td> add text </td>
+                                            <td>add text </td>
+                                          </tr>
+                                          <tr>
+                                            <th scope="row">add text</th>
+                                            <td>add text </td>
+                                            <td>add text </td>
+                                            <td> add text </td>
+                                            <td>add text </td>
+                                          </tr>
+                                        </tbody>
+                                      </table>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-xl-4">
+                        <div class="card">
+                            <h5 class="card-header" style=" background-color: #6a9dfd;">Heart Beat </h5>
+                            <div class="card-body" style="background-color: #f2f5d8;">
+                                <div id="traffic-chart"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </main>
+        </div>
+      <button class="btn btn-primary" id="share-button"><a id="WA" href="" data-action="share/whatsapp/share" target="_blank">Share</a></button>
+    </div>
+    <footer class="mb-3" style="background-color: #c9d6df;">
+  <section id="Contact" style="background-color: #c9d6df;">
+    <footer class="text-center text-white footer">
+      <div class="container pt-4">
+        <section class="mb-4">
+          <a class="btn btn-link btn-floating btn-lg text-dark m-1" href="#!" role="button"><i class="fa fa-facebook-official" aria-hidden="true"></i></a>
+          <a class="btn btn-link btn-floating btn-lg text-dark m-1" href="#!" role="button"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+          <a class="btn btn-link btn-floating btn-lg text-dark m-1" href="#!" role="button"><i class="fa fa-google" aria-hidden="true"></i></a>
+          <a class="btn btn-link btn-floating btn-lg text-dark m-1" href="#!" role="button"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+          <a class="btn btn-link btn-floating btn-lg text-dark m-1" href="#!" role="button"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+          <a class="btn btn-link btn-floating btn-lg text-dark m-1" href="#!" role="button"><i class="fa fa-github" aria-hidden="true"></i></a>
+          <section class="">
+            <form action="">
+              <div class="row d-flex justify-content-center">
+                <div class="col-auto">
+                  <p class="pt-2" style="color:black">
+                    <strong>Sign up for our newsletter</strong>
+                  </p>
+                </div>
+                <div class="col-md-5 col-12">
+
+                  <div class="form-outline form-black mb-4">
+                    <input type="email" id="form5Example2" class="form-control" />
+                  </div>
+                </div>
+                <div class="col-auto">
+                  <button type="submit" class="btn btn-outline-dark mb-4">
+                    Subscribe
+                  </button>
+                </div>
+              </div>
+            </form>
+          </section>
+        </section>
+      </div>
+    </footer>
+  </section>
+</footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/chartist.js/latest/chartist.min.js"></script>
+    <!-- Github buttons -->
+    <script async defer src="https://buttons.github.io/buttons.js"></script>
+    <script>
+        new Chartist.Line('#traffic-chart', {
+            labels: ['January', 'Februrary', 'March', 'April', 'May', 'June'],
+            series: [
+                [23000, 25000, 19000, 34000, 56000, 64000]
+            ]
+            }, {
+            low: 0,
+            showArea: true
+        });
+    </script>
+ <script type="text/javascript" charset="utf-8">
+        const URL = window.location.href.slice(7);
+        const link = document.getElementById('WA');
+        link.href="whatsapp://send?text=Here is my Dashboard." + URL;
+        console.log(URL);
+</script>
+</body>
+</html>

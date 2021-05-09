@@ -1,0 +1,488 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@1,800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="https://kit.fontawesome.com/6de3383711.js" crossorigin="anonymous"></script>
+  <title>Hello, world!</title>
+</head>
+
+<body style="background-color: #f1f0ef;">
+  <!-- BOOK A DEMO -->
+  <div class="modal fade" id="modal3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content" style="background-color: #dcd6f7;">
+        <div class="modal-header text-center" style="background-color: #a6b1e1;">
+          <h4 class="modal-title w-100 font-weight-bold">Book a Demo</h4>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <form class="form" method="POST" action="#" role="form">
+          <div class="form-group">
+
+          </div>
+          <div class="form-group px-3">
+            <label class="control-label" for="signupName">Your name</label>
+            <input id="signupName" type="text" maxlength="50" class="form-control">
+          </div>
+          <div class="form-group px-3">
+            <label class="control-label" for="signupEmail">Email</label>
+            <input id="signupEmail" type="email" maxlength="50" class="form-control">
+          </div>
+          <div class="form-group px-3">
+            <label class="control-label" for="phone">Phone</label>
+            <input id="phone" type="text" maxlength="50" class="form-control">
+          </div>
+          <div class="form-group px-3">
+            <label class="control-label" for="address">Address</label>
+            <input id="address" type="text" maxlength="75" class="form-control">
+          </div>
+          <div class="form-group px-3">
+            <label class="control-label" for="message">Message</label>
+            <input id="message" type="text" maxlength="300" class="form-control">
+          </div>
+          <div class="form-group px-3">
+            <button id="signupSubmit" type="submit" class="btn btn-primary btn-block text-uppercase mb-2 rounded-pill shadow-sm" style="background-color: #424874;">Book A Demo</button>
+          </div>
+          <p class="px-3"> Got Other Queries? Contact us at <a style="color:#04009a;" href=""></a></p>
+        </form>
+
+
+      </div>
+    </div>
+  </div>
+  <!-- LOGIN -->
+  <div class="modal fade" id="modalLoginForm2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content" style="background-color: #dcd6f7;">
+        <div class="modal-header text-center" style="background-color: #a6b1e1;">
+          <h4 class="modal-title w-100 font-weight-bold">Sign-in</h4>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body mx-3">
+          <div class="md-form mb-3">
+            <i class="fas fa-envelope prefix grey-text"></i>
+            <input type="email" id="defaultForm-email" class="form-control validate" placeholder="Email address">
+
+          </div>
+
+          <div class="md-form mb-3">
+            <i class="fas fa-lock prefix grey-text"></i>
+            <input type="password" id="defaultForm-pass" class="form-control validate" name="password" placeholder="Password">
+
+          </div>
+
+          <div class="md-form mb-3">
+            <button type="button" class="btn  btn-lg" style="margin-left: 37%; background-color: #424874;color: white;">Login</button>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- REGISTER -->
+  <div class="modal fade" id="modalRegisterForm1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content" style="background-color: #dcd6f7;">
+        <div class="modal-header text-center" style="background-color: #a6b1e1;">
+          <h4 class="modal-title w-100 font-weight-bold">Sign up</h4>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body mx-3">
+          <div class="md-form mb-3">
+            <i class="fas fa-user prefix grey-text"></i>
+            <input type="text" id="orangeForm-name" name="name" placeholder="Name" class="form-control validate">
+
+          </div>
+          <div class="md-form mb-3">
+            <i class="fas fa-envelope prefix grey-text"></i>
+            <input type="email" id="orangeForm-email" class="form-control validate" name="email" placeholder="Email Address">
+          </div>
+
+          <div class="md-form mb-3">
+            <i class="fas fa-lock prefix grey-text"></i>
+            <input type="password" id="orangeForm-pass" class="form-control validate" name="password" placeholder="Password">
+
+          </div>
+          <div class="md-form mb-3">
+            <i class="fas fa-lock prefix grey-text"></i>
+            <input type="password" id="orangeForm-pass" class="form-control validate" name="confirmpassword" placeholder="Confirm Password">
+
+          </div>
+          <div class="md-form mb-3">
+            <i class="far fa-id-card"></i>
+            <input type="text" id="orangeForm-number" class="form-control validate" name="tokencode" placeholder="Product ID">
+
+          </div>
+          <div class="md-form mb-3">
+            <button type="button" class="btn  btn-lg" style="margin-left: 37%;background-color: #424874;color: white;">Register</button>
+
+          </div>
+
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg navbar-dark" id="nav" style=" background-color: #6a9dfd;">
+    <a class="navbar-brand" href="#"></a>
+    <img src="" alt="">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active px-3">
+          <a class="nav-link" href="#" style="color: black;text-shadow: 1px 1px #FF0000;;margin-left: 0%;font-size: 1.2rem; font-weight: 700;">HOME<span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item px-3">
+          <a class="nav-link" href="#" style="color: black;text-shadow: 1px 1px #FF0000;font-size: 1.2rem;font-weight: 700;">ABOUT </a>
+        </li>
+        <li class="nav-item px-3">
+          <a class="nav-link" href="#" style="color: black;text-shadow: 1px 1px #FF0000;font-size: 1.2rem;font-weight: 700;">PROTOTYPE</a>
+        </li>
+        <li class="nav-item px-3">
+          <a class="nav-link" href="" style="color: black;text-shadow: 1px 1px #FF0000;margin-left: 0%;font-size: 1.2rem; font-weight: 700;" data-toggle="modal" data-target="#modal3">REQUEST DEMO</a>
+        </li>
+        <li class="nav-item px-3">
+          <a href="dashboard.html" class="nav-link" href="" style="color: black;text-shadow: 1px 1px #FF0000;margin-left: 0%;font-size: 1.2rem; font-weight: 700;">Dashboard</a>
+        </li>
+      </ul>
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item px-5">
+          <!-- <div class="modal-footer d-flex justify-content-center"> -->
+          <a href="" style="color: black;text-shadow: 1px 1px #FF0000;margin-left: 0%;font-size: 1.2rem; font-weight: 700;text-decoration: none;" data-toggle="modal" data-target="#modalRegisterForm1"><i class="fas fa-user-plus"
+              style="padding: 4px; color: black;"></i> REGISTER</a>
+        </li>
+        <li class="nav-item px-5">
+          <!-- <div class="modal-footer d-flex justify-content-center"> -->
+          <a href="" style="color: black;text-shadow: 1px 1px #FF0000;margin-left: 0%;font-size: 1.2rem; font-weight: 700;text-decoration: none;" data-toggle="modal" data-target="#modalLoginForm2"><i class="fas fa-sign-in-alt"
+              style="padding: 4px;color: black;"></i> LOGIN</a>
+        </li>
+      </ul>
+
+    </div>
+  </nav>
+  </nav>
+  <!-- LANDING -->
+  <section class="py-3" id="landing" ; style="background-color: #6a9dfd;">
+    <div class="container py-2" style="font-family: 'Barlow Condensed', sans-serif;padding: 0;">
+      <div class="row" style="margin: 0;padding: 0;">
+        <div class="col-md-6 sm-6 mt-5">
+          <div class="content">
+            <h1 id="companyname">
+              HEALTH <br> MONITORING <br>
+              AT HOME
+            </h1>
+          </div>
+        </div>
+        <div class="col-md-6 sm-6 px-3">
+          <div class="row pb-5 mb-4">
+            <img src="images/home.jpg" class="img-fluid" id="aunty">
+          </div>
+          <div class="row" style="margin-left: 80%;margin-top: -10%;">
+            <img src="images/computer.png" style="width: 250px;" class="img-fluid " alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+    </div>
+    </div>
+  </section>
+  <!-- PRODUCT -->
+  <section id="featured" class="py-3" style="background-color: #f1f0ef;clip-path: polygon(50% 0%, 100% 0, 100% 43%, 100% 76%, 100% 100%, 20% 93%, 0 100%, 0% 43%, 0 0);">
+    <h2 id="tagline">TAKING ONLINE CONSULTATION TO THE NEXT LEVEL</h2>
+    <div class="container" style="margin: 0;padding: 0;">
+      <div class="row mb-3 pb-2 " style="margin: 0;padding: 0;">
+        <div class="col-md-6 sm-6 mt-5">
+          <img class="img-fluid" src="images/illustration.png" alt="">
+        </div>
+        <div class="col-md-6 sm-6 mt-5 py-3" style="margin: 0;padding: 0;">
+          <h2 id="h21" style="font-size: x-large;font-style: italic;color: black;"><i class="fas fa-clipboard-check"></i> Regular track of your temperature, heartbeats, and oxygen levels
+            accessible in your doctor's mobile phone</h2>
+          <h4 class="my-2" id="h22">
+            <i class="fas fa-exclamation-triangle"></i> No longer critical moments,get notified before hand
+          </h4>
+        </div>
+        <img id="docphone" src="images/415.jpg" class="" alt="" style="position: absolute;
+                width: 250px;
+                margin-left: 83.5%;
+                margin-top: -1.5%;">
+      </div>
+    </div>
+    </div>
+  </section>
+
+  <!-- BLOG -->
+
+  <section id="Blog" class="py-5" style="background-color: #f1f0ef;">
+    <div class="b-mid-conatiner">
+      <div class="bp-i">
+        <h2 id="blog" class="py-2 px-5"><strong>BLOG</strong></h2>
+        <h4 class="py-2 px-5" id="blogf">Get Inspired with the world of Robotics and Healthcare </h4>
+      </div>
+      <div class="BP">
+        <div class="card-group px-5 outline-dark">
+          <div class="card" style="background-color: #faf3f2;">
+            <img src="images/education.jpg" class="img-fluid" alt="..." style="height: 49%">
+            <div class="card-body" style="background-color: #e4f9f5;">
+              <h5 class="card-title"><b>Robotics is changing the face of medicine</b></h5>
+              <p class="card-text">
+                Today, companies are leveraging advances in the tech to develop new robotic applications to explore the future of medicine — including those related to bionics, disease discovery, and rehabilitation.
+              </p>
+            </div>
+            <div class="card-footer" style="background-color: #71c9ce;">
+              <a href="https://medium.com/predict/the-trial-of-an-artificial-brain-84edc401c6c6" target="_blank">
+                <button type="button" style="font-weight: bolder;" class="btn btn-outline-dark">Read More &#8594</button>
+              </a>
+            </div>
+          </div>
+          <div class="card" style="background-color: #faf3f2;">
+            <img src="images/render-robot.png" style="height: 49%;" class="img-fluid" alt="...">
+            <div class="card-body" style="background-color: #e4f9f5;">
+              <h5 class="card-title"><b>Robotics in DNA</b></h5>
+              <p class="card-text">Researchers have already created DNA robots that can walk, while others have shown DNA robots can pick up and drop off molecular cargo.
+                But this new study shows DNA robots can walk, sort, and work together — all at once.</p>
+            </div>
+            <div class="card-footer" style="background-color: #71c9ce;">
+              <a href="https://admantium.medium.com/robot-systems-hardware-overview-56e55e310e91">
+                <button type="button" style="font-weight: bolder;" class="btn btn-outline-dark">Read More &#8594;</button>
+              </a>
+            </div>
+          </div>
+          <div class="card" style="background-color: #faf3f2;">
+            <img src="images/professional-eyes.png" class="img-fluid" style="height: 49%;" alt="...">
+            <div class="card-body" style="background-color: #e4f9f5">
+              <h5 class="card-title"><b>Opthalmology and Robotics</b></h5>
+              <p class="card-text">When you build your own robot, you need to make two essential decisions: Its hardware and software. My background is
+                software development, so I will start to investigate the design questions for my robot from that direction as well.</p>
+            </div>
+            <div class="card-footer" style="background-color: #71c9ce;">
+              <a href="https://admantium.medium.com/self-made-robot-software-stack-overview-c39d5f53ed28">
+                <button type="button" style="font-weight: bolder;" class="btn btn-outline-dark">Read More &#8594;</button>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+  <!-- TEAM -->
+  <section class="my-5 py-5" style="background-color: #f1f0ef;">
+    <div class="section text-center">
+      <h2 class="title py-3 mb-5"> <strong>MEET THE TEAM</strong></h2>
+      <div class="team">
+        <div class="row" style="margin: 0;padding: 0;">
+          <div class="col-md-4">
+            <div class="team-player ml-auto mr-auto">
+              <div class="card card-plain " style="background-color: #e4f9f5;">
+                <div class="row" style="background-color: #f0f5f9;margin: 0;">
+                  <div class="col-md-4 ml-auto mr-auto">
+                    <img src="https://media-exp1.licdn.com/dms/image/C4E03AQG7RCNvieIN2g/profile-displayphoto-shrink_800_800/0/1614166188439?e=1625702400&v=beta&t=wm7AlYwmKm7dIDzrnt9OdvHdSuzfs9bzZs8YttCiRvQ" alt="Thumbnail Image"
+                      class="img-raised rounded-circle img-fluid">
+                  </div>
+                </div>
+                <h4 class="card-title py-2">Dibyanshu Mohonty
+                  <br>
+                  <small class="card-description text-muted">Django Developer</small>
+                </h4>
+                <div class="card-body">
+                  <p class="card-description">You can write here details about one of your team members. You can give more details about what they do. Feel free to add some
+                    for people to be able to follow them outside the site.</p>
+                </div>
+                <div class="card-footer justify-content-center">
+                  <a href="#pablo" class="btn btn-link btn-just-icon"><i class="fa fa-twitter"></i></a>
+                  <a href="#pablo" class="btn btn-link btn-just-icon"><i class="fa fa-instagram"></i></a>
+                  <a href="#pablo" class="btn btn-link btn-just-icon"><i class="fa fa-facebook-square"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="team-player ml-auto mr-auto">
+              <div class="card card-plain" style="background-color: #e4f9f5;">
+                <div class="row" style="background-color: #f0f5f9;margin: 0;">
+                  <div class="col-md-4 ml-auto mr-auto">
+                    <img src="https://media-exp1.licdn.com/dms/image/C4E03AQHYh1QqD0Weng/profile-displayphoto-shrink_800_800/0/1610638071051?e=1625702400&v=beta&t=iaX3K4iv6rk8IKYwT_yN7mFfgznaptCxWEDm7Qob08g" alt="Thumbnail Image"
+                      class="img-raised rounded-circle img-fluid">
+                  </div>
+                </div>
+                <h4 class="card-title py-2">Preetish Biswal
+                  <br>
+                  <small class="card-description text-muted">Front-end Developer</small>
+                </h4>
+                <div class="card-body">
+                  <p class="card-description">You can write here details about one of your team members. You can give more details about what they do. Feel free to add some
+                    for people to be able to follow them outside the site.</p>
+                </div>
+                <div class="card-footer justify-content-center">
+                  <a href="#pablo" class="btn btn-link btn-just-icon"><i class="fa fa-twitter"></i></a>
+                  <a href="#pablo" class="btn btn-link btn-just-icon"><i class="fa fa-linkedin"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="team-player mr-auto ml-auto">
+              <div class="card card-plain" style="background-color: #e4f9f5;">
+                <div class="row" style="background-color: #f0f5f9;margin: 0;">
+                  <div class="col-md-4 ml-auto mr-auto">
+                    <img src="https://media-exp1.licdn.com/dms/image/C5603AQEGXAeV51kAjQ/profile-displayphoto-shrink_800_800/0/1612193799366?e=1625702400&v=beta&t=S68yFfmejxPVQeprJtc--yZo0EWta3YxygsczwX81sE" alt="Thumbnail Image"
+                      class="img-raised rounded-circle img-fluid">
+                  </div>
+                </div>
+                <h4 class="card-title py-2">Himanshu Shah
+                  <br>
+                  <small class="card-description text-muted">IOT Developer</small>
+                </h4>
+                <div class="card-body">
+                  <p class="card-description">You can write here details about one of your team members. You can give more details about what they do. Feel free to add some
+                    for people to be able to follow them outside the site.</p>
+                </div>
+                <div class="card-footer justify-content-center">
+                  <a href="#pablo" class="btn btn-link  btn-just-icon-dark"><i class="fa fa-twitter"></i></a>
+                  <a href="#pablo" class="btn btn-link btn-just-icon"><i class="fa fa-instagram"></i></a>
+                  <a href="#pablo" class="btn btn-link btn-just-icon"><i class="fa fa-facebook-square"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <div class="container contact-form" id="c1">
+    <h3 class="py-3" style="margin-top:0; text-align: center; font-weight: bolder; letter-spacing: 4px; word-spacing: 10px;">CONTACT US</h3>
+    <div class="row">
+      <div class="col-md-6 px-3">
+        <form method="post">
+
+          <div class="form-group">
+            <input type="text" name="txtName" class="form-control" placeholder="Your Name *" value="" />
+          </div>
+          <div class="form-group">
+            <input type="text" name="txtEmail" class="form-control" placeholder="Your Email *" value="" />
+          </div>
+          <div class="form-group">
+            <input type="text" name="txtPhone" class="form-control" placeholder="Your Phone Number *" value="" />
+          </div>
+          <div class="form-group">
+            <textarea name="txtMsg" class="form-control" placeholder="Your Message *" style="width: 100%; height: 150px;"></textarea>
+          </div>
+          <div class="form-group">
+            <input type="submit" name="btnSubmit" class="btnContact" value="Send Message" />
+          </div>
+        </form>
+
+      </div>
+      <div class="col-md-6">
+
+        <img src="Screenshot_1481-removebg-preview.png" class="img-fluid" style="position: absolute;width: 800px;" alt="">
+
+
+
+      </div>
+
+    </div>
+
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="mb-3" style="background-color: #c9d6df;">
+    <section id="Contact" style="background-color: #c9d6df;">
+      <footer class="text-center text-white footer">
+        <div class="container pt-4">
+          <section class="mb-4">
+            <a class="btn btn-link btn-floating btn-lg text-dark m-1" href="#!" role="button"><i class="fa fa-facebook-official" aria-hidden="true"></i></a>
+            <a class="btn btn-link btn-floating btn-lg text-dark m-1" href="#!" role="button"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+            <a class="btn btn-link btn-floating btn-lg text-dark m-1" href="#!" role="button"><i class="fa fa-google" aria-hidden="true"></i></a>
+            <a class="btn btn-link btn-floating btn-lg text-dark m-1" href="#!" role="button"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+            <a class="btn btn-link btn-floating btn-lg text-dark m-1" href="#!" role="button"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+            <a class="btn btn-link btn-floating btn-lg text-dark m-1" href="#!" role="button"><i class="fa fa-github" aria-hidden="true"></i></a>
+            <section class="">
+              <form action="">
+                <div class="row d-flex justify-content-center">
+                  <div class="col-auto">
+                    <p class="pt-2" style="color:black">
+                      <strong>Sign up for our newsletter</strong>
+                    </p>
+                  </div>
+                  <div class="col-md-5 col-12">
+
+                    <div class="form-outline form-black mb-4">
+                      <input type="email" id="form5Example2" class="form-control" />
+                    </div>
+                  </div>
+                  <div class="col-auto">
+                    <button type="submit" class="btn btn-outline-dark mb-4">
+                      Subscribe
+                    </button>
+                  </div>
+                </div>
+              </form>
+            </section>
+          </section>
+          <section class="">
+            <div class="row">
+              <div class="col-lg-3 col-md-6 mb-4 mb-md-0" style="color:black;">
+                <ul class="list-unstyled mb-0">
+                  <li>
+                    <a href="#!" class="text-dark"><i class="fab fa-linkedin-in"></i> <strong> Binary#404</strong> </a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-lg-3 col-md-6 mb-4 mb-md-0" style="color:black;">
+                <ul class="list-unstyled mb-0">
+                  <li>
+                    <a href="#!" class="text-dark"><i class="fas fa-phone-alt"></i> <strong> +91 985-421-8523</strong></a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-lg-3 col-md-6 mb-4 mb-md-0" style="color:black;">
+                <ul class="list-unstyled mb-0">
+                  <li>
+                    <a href="#!" class="text-dark"><i class="fas fa-envelope"></i> <strong> biz.binary404@gmail.com</strong> </a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-lg-3 col-md-6 mb-4 mb-md-0" style="color:black;">
+                <ul class="list-unstyled mb-0">
+                  <li>
+                    <a href="#!" class="text-dark"><i class="fas fa-map-marker-alt"></i> <strong> Bhubaneswar, India</strong></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+      </footer>
+    </section>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script>
+
+</body>
+
+</html>
